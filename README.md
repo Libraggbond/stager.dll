@@ -22,6 +22,8 @@ Replace the payload in stager_dll_xx.cpp and build the DLL on a Windows machine 
 ```cl /LD /MT /EHa stager_dll_xx.cpp aes.cpp /Fe:stager.dll```  
   
 ```使用 VS2019 Native Tools Command Prompt 执行 cl 命令```
+
+
 You can also build a standalone executable with:  
 ```cl /MT /EHa stager_exe_xx.cpp aes.cpp /Fe:stager.exe```  
   

